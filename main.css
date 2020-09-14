@@ -1,0 +1,23 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ecf0f1;
+  font-size: 100%;
+}
+
+html .container,
+body .container {
+  width: 100vw;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+html .container .calendar-container,
+body .container .calendar-container {
+  height: 700px;
+  width: 700px;
+}
+/*# sourceMappingURL=main.css.map */

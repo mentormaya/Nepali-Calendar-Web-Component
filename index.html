@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Calendar with web component</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h3 class="title-header">Nepali calendar will be rendered here : <span class="selected"></span></h3>
+        <nepali-calendar style="src/nepali-calendar-1.0.0-min.css" lang="nep">
+            <div slot="title">
+                <strong>२०००-२०९९</strong>
+                <small>नेपाली क्यालेण्डर</small>
+            </div>
+        </nepali-calendar>
+    </div>
+    <script src="src/nepali-calendar-web-component-min.js"></script>
+    <script>
+        let dis = document.querySelector('.selected');
+        const arrayOfWeekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        let calendar = document.querySelector("nepali-calendar");
+        calendar.addEventListener('select', ({
+            detail
+        }) => {
+            dis.innerHTML = arrayOfWeekdays[detail.day - 1] + " " + detail.np + " BS & " + detail.int + " AD ";
+        });
+    </script>
+</body>
+
+</html>

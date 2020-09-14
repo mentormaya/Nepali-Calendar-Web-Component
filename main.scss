@@ -1,0 +1,18 @@
+$background-color: #ecf0f1;
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: $background-color;
+    font-size: 100%;
+    .container {
+        width: 100vw;
+        height: auto;
+        display: grid;
+        place-content: center;
+        .calendar-container {
+            height: 700px;
+            width: 700px;
+        }
+    }
+}
