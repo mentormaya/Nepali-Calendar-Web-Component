@@ -13,14 +13,17 @@
 
     <div class="container">
         <h3 class="title-header">Nepali calendar will be rendered here : <span class="selected"></span></h3>
-        <nepali-calendar style="src/nepali-calendar-1.0.0-min.css" lang="nep">
+        <nepali-calendar
+            style="https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-1.0.0-min.css"
+            lang="nep">
             <div slot="title">
                 <strong>२०००-२०९९</strong>
                 <small>नेपाली क्यालेण्डर</small>
             </div>
         </nepali-calendar>
     </div>
-    <script src="src/nepali-calendar-web-component-min.js"></script>
+    <script src="https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-web-component-min.js">
+    </script>
     <script>
         let dis = document.querySelector('.selected');
         const arrayOfWeekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

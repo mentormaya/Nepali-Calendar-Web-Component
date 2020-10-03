@@ -2,6 +2,10 @@
 
 ![Nepali Calendar](Snips/Calendar.png)
 
+## Demo
+
+![Click me to see me live](https://mentormaya.github.io/Nepali-Calendar-Web-Component/)
+
 ## Descrition
 
 This is the simple library for developers who wants a Nepali Calendar in there app with JS. The objective of this library is to provide a complete solution for the nepali calendar needs. Either that being need for calendar for UI design or may be its for datepicker. This library will also be usefull and provide an option to convert the dates back and forth in nepali and international calendar.
@@ -25,7 +29,7 @@ This library is published with fully funtional calendar UI. Though i am deciding
 - [x] Planning the features
 - [x] Workflow design
 - [x] Implementation
-- [] Upload to files to cdn
+- [x] Upload to files to cdn
 - [x] Update the README.md
 - [x] Upload to GITHUB
 - [] Adding a Datepicker functionality
@@ -42,6 +46,15 @@ git clone https://github.com/mentormaya/Nepali-Calendar-Web-Component.git
 
 and place the file inside the library or js folder of your project and include this in your html document and you are all set.
 
+###OR
+
+what you can do instead is you can use the cdn of the project directly from GitHub Pages with the following link
+
+```bash
+https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-1.0.0-min.css
+https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-web-component-min.js
+```
+
 ## Usage
 
 This library is very simple to use.
@@ -50,6 +63,12 @@ All you need to do is just import it in to your HTML document as
 
 ```html
 <script src="path-to-file/file.js"></script>
+```
+
+or with cdn link your script should look like
+
+```html
+<script src="https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-web-component-min.js"></script>
 ```
 
 and you are all set. You can go a head and create a nepali calendar with the custom component provided by this library.
@@ -63,7 +82,10 @@ A demo _index.html_ file is included in the project directory that also explains
 You can also use your own calendar title with the slot named _title_ provided where you can use any HTML Typography based elements as
 
 ```html
-<nepali-calendar style="src/nepali-calendar-1.0.0-min.css" lang="nep">
+<nepali-calendar
+  style="https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-1.0.0-min.css"
+  lang="nep"
+>
   <div slot="title">
     <strong>२०००-२०९९</strong>
     <small>नेपाली क्यालेण्डर</small>
