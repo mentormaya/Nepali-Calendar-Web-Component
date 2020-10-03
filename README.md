@@ -51,8 +51,8 @@ and place the file inside the library or js folder of your project and include t
 what you can do instead is you can use the cdn of the project directly from GitHub Pages with the following link
 
 ```bash
-https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-1.0.0-min.css
-https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-web-component-min.js
+https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-1.0.0.min.css
+https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-web-component.min.js
 ```
 
 ## Usage
@@ -68,7 +68,7 @@ All you need to do is just import it in to your HTML document as
 or with cdn link your script should look like
 
 ```html
-<script src="https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-web-component-min.js"></script>
+<script src="https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-web-component.min.js"></script>
 ```
 
 and you are all set. You can go a head and create a nepali calendar with the custom component provided by this library.
@@ -83,7 +83,7 @@ You can also use your own calendar title with the slot named _title_ provided wh
 
 ```html
 <nepali-calendar
-  style="https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-1.0.0-min.css"
+  style="https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-1.0.0.min.css"
   lang="nep"
 >
   <div slot="title">
@@ -96,7 +96,7 @@ You can also use your own calendar title with the slot named _title_ provided wh
 Also the stylesheet of the Calendar UI is seperated from the library to make it easy for the customization. Althought the css is seperately passed with the attribute value its property are still binded to the calendar and its internal elements and encapsulated within the calendar shadow DOM.
 
 ```html
-<nepali-calendar style="src/nepali-calendar-1.0.0-min.css" lang="eng">
+<nepali-calendar style="src/nepali-calendar-1.0.0.min.css" lang="eng">
   <div slot="title">
     <strong>२०००-२०९९</strong>
     <small>नेपाली क्यालेण्डर</small>

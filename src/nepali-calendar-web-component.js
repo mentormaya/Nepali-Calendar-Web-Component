@@ -179,19 +179,19 @@ let now = {};
 
 const daysInYear = 365;
 
-String.prototype.toNepaliDigits = function() {
+String.prototype.toNepaliDigits = function () {
     return this.replace(/[0-9]/g, (match) => {
         return nepali_digits[match];
     });
 };
 
-String.prototype.revNepaliNumber = function() {
+String.prototype.revNepaliNumber = function () {
     return this.replace(/['०','१','२','३','४','५','६','७','८','९']/g, (match) => {
         return nepali_digits.findIndex((element) => element == match);
     });
 };
 
-String.prototype.dateObjects = function(monthFirst = true) {
+String.prototype.dateObjects = function (monthFirst = true) {
     date = {};
     //parse the element of dates
     let data = /(\d+)[/.-](\d+)[/.-](\d+)/gi.exec(this.toString());
@@ -216,7 +216,7 @@ String.prototype.dateObjects = function(monthFirst = true) {
     return date;
 };
 
-Date.prototype.format = function(seprator = "-") {
+Date.prototype.format = function (seprator = "-") {
     return (
         this.getFullYear() +
         seprator +
@@ -443,7 +443,7 @@ function getMonthName(month, nep = true) {
 const npCalTemplate = document.createElement("template");
 
 npCalTemplate.innerHTML = `
-<link rel="stylesheet">
+<link rel="stylesheet" href="https://mentormaya.github.io/Nepali-Calendar-Web-Component/src/nepali-calendar-1.0.0-min.css">
 <div class="calendar-container">
             <div class="calendar-head">
                 <span class="calendar-title">
