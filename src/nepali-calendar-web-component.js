@@ -714,7 +714,7 @@ class NepaliCalendar extends HTMLElement {
             mode: "open",
         });
         this.shadowRoot.appendChild(npCalTemplate.content.cloneNode(true));
-        this.shadowRoot.querySelector("link").href = this.getAttribute("style");
+        if (typeof this.getAttribute("style") != null) this.shadowRoot.querySelector("link").href = this.getAttribute("style");
 
         //set the date, month and year to display
         now = {
