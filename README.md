@@ -4,7 +4,7 @@
 
 ## Demo
 
-![Click me to see me live](https://mentormaya.github.io/Nepali-Calendar-Web-Component/)
+[Click me to see me live](https://mentormaya.github.io/Nepali-Calendar-Web-Component/)
 
 ## Descrition
 
