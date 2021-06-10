@@ -819,11 +819,10 @@ class NepaliCalendar extends HTMLElement {
         day.innerHTML = date.last - (date.start - 2 - itr);
       } else if (itr <= date.days + (date.start - 2)) {
         if (
-          date.year === date.today.year &&
-          date.month === date.today.month &&
-          itr === date.today.date
-        )
+          itr === date.today.date + date.start - 2
+        ){
           day.parentElement.classList.add("today");
+        }
         day.innerHTML = itr - (date.start - 2);
       } else {
         day.parentElement.classList.add("inactive");
